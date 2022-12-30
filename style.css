@@ -1,7 +1,7 @@
 /* background-size:cover; makes the background entire background image fit
 inside the container regardless of dimension */ 
 
-/* give the header a height of 100vh so the background image that fills the header
+/* give the container a height of 100vh so the background image that fills the header
 fills out the entire viewport/browser screen */
 
 @font-face {
