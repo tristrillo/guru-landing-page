@@ -1,7 +1,298 @@
+/* background-size:cover; makes the background entire background image fit
+inside the container regardless of dimension */ 
+
+/* give the header a height of 100vh so the background image that fills the header
+fills out the entire viewport/browser screen */
+
+@font-face {
+    font-family: Objektiv-bold;
+    src: url(fonts/ObjektivMk1-bold/Objektiv\ Mk1\ W03\ XBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Objektiv-italic;
+    src: url(fonts/ObjektivMk1-italic/Objektiv\ Mk1\ W03\ Italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Objektiv-medium;
+    src: url(fonts/ObjektivMk1-medium/Objektiv\ Mk1\ W03\ Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Objektiv-regular;
+    src: url(fonts/ObjektivMk1-regular/Objektiv\ Mk1\ W03\ Thin.ttf) format('truetype');
+}
+
+body {
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: Objektiv-bold;
+    font-size: 72px;
+    color: rgb(36, 40, 90);
+}
+
+h2 {
+    font-family: Objektiv-bold;
+    font-size: 36px;
+    color: rgb(36, 40, 90);
+}
+
+h3 {
+    font-family: Objektiv-medium;
+    font-size: 26px;
+    color: rgb(36, 40, 90);
+}
+
+h4 {
+    font-family: Objektiv-regular;
+    font-size: 24px;
+    color: rgb(36, 40, 90);
+}
+
+p {
+    font-family: Objektiv-italic;
+    font-size: 20px;
+    color: rgb(36, 40, 90);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
-    background-image:url(images/backgrounds/Hero-image-background.png);
+    background-image: url(images/backgrounds/Hero-image-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: Objektiv-medium;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.navbar-left {
+    display: flex;
+    gap: 100px;
+
+}
+
+.navbar-right {
+    padding-top: 20px;
+}
+
+.navbar, ul{
+    display: flex;
+    gap: 50px;
+    padding-top: 20px;
+    color: rgb(36, 40, 90);
+}
+
+.hero {
+    display:flex ;
+    padding-left: 150px;
+    padding-right: 50px;
+}
+
+.hero-left {
+    width: 700px;
+}
+
+.hero-left-bottom {
+    display: flex;
+    gap: 30px;
+}
+
+.hero-download {
+    padding-top: 12px;
+}
+
+.content1 {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding-right: 120px;
+    padding-left: 50px;
+}
+
+.content2 {
+    display: flex;
+    margin-top: 100px;
+    padding-right: 100px;
+    padding-left: 150px;
+    gap: 80px;
+    align-items: center;
+
+}
+
+.content3 {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding-right: 150px;
+    padding-left: 100px;
+    gap: 50px;
 }
 
 .content4 {
     background-image: url(images/backgrounds/Reviews-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    margin-top: 150px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
+
+.content4-top {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    text-align: center;
+}
+
+.content4-container {
+    display: flex;
+    gap: 30px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content5 {
+    margin-top: 100px;
+}
+
+.content5-top {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+
+}
+
+.content5-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.advice {
+    width: 250px;
+}
+
+.content6 {
+    background-image: url(images/backgrounds/How-it-works-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-left: 150px;
+    padding-right: 100px;
+    font-family: Objektiv-medium;
+    font-size: 22px;
+}
+
+.content6-left h2 {
+    color: white;
+
+}
+
+.content7 {
+    background-image: url(images/backgrounds/CTA-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.content7-top {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content7-bottom {
+    display: flex;
+}
+
+.content7-download {
+    padding: 15px;
+}
+
+.footer {
+    background-color:rgb(36, 40, 90) ;
+    font-family: Objektiv-medium;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+
+}
+
+.footer ul {
+    color: white;
+    gap: 15px;
+    padding: 0;
+    
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 60px;
+    border-bottom: 2px white solid;
+}
+
+.footer-bottom p {
+    color: white;
+}
+
+.footer-bottom {
+    padding-left: 50px;
+}
+
+
+
+
+
+
+
